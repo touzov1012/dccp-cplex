@@ -1,0 +1,34 @@
+﻿<Window x:Class="DCCP_Examples.Window_Polys"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DCCP_Examples"
+        mc:Ignorable="d"
+        Title="Polygon Packing" Height="360" Width="563"
+        ResizeMode="NoResize">
+    <Grid>
+        <Canvas x:Name="mainCanvas" HorizontalAlignment="Left" Height="300" Margin="239,10,0,0" VerticalAlignment="Top" Width="300" Background="#FFF4F4F4"/>
+        <Button x:Name="btn_polyInit" Content="Initialize" HorizontalAlignment="Left" Margin="10,254,0,0" VerticalAlignment="Top" Width="109" Height="26" Click="btn_polyInit_Click"/>
+        <Button x:Name="btn_polyStep" Content="Run" HorizontalAlignment="Left" Margin="124,254,0,0" VerticalAlignment="Top" Width="110" Height="26" Click="btn_polyStep_Click" IsEnabled="False"/>
+        <TextBox x:Name="txt_polyCnt" HorizontalAlignment="Left" Height="23" Margin="114,10,0,0" TextWrapping="Wrap" Text="12" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lbl_polyCnt" Content="Polygon Count:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="99"/>
+        <TextBox x:Name="txt_polyTriCnt" HorizontalAlignment="Left" Height="23" Margin="114,38,0,0" TextWrapping="Wrap" Text="12" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lbl_polyTriCnt" Content="Tri. per Polygon:" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" Width="99"/>
+        <TextBox x:Name="txt_attempts" HorizontalAlignment="Left" Height="23" Margin="62,170,0,0" TextWrapping="Wrap" Text="12" VerticalAlignment="Top" Width="47"/>
+        <Label x:Name="lbl_attempts" Content="Starts:" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top" Width="47"/>
+        <TextBox x:Name="txt_tau" HorizontalAlignment="Left" Height="23" Margin="152,170,0,0" TextWrapping="Wrap" Text="12" VerticalAlignment="Top" Width="82"/>
+        <Label x:Name="lbl_tau" Content="Tau:" HorizontalAlignment="Left" Margin="114,170,0,0" VerticalAlignment="Top" Width="33"/>
+        <TextBox x:Name="txt_tauM" HorizontalAlignment="Left" Height="23" Margin="55,198,0,0" TextWrapping="Wrap" Text="12" VerticalAlignment="Top" Width="54"/>
+        <Label x:Name="lbl_tauM" Content="TauM:" HorizontalAlignment="Left" Margin="10,198,0,0" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="txt_mu" HorizontalAlignment="Left" Height="23" Margin="152,198,0,0" TextWrapping="Wrap" Text="12" VerticalAlignment="Top" Width="82"/>
+        <Label x:Name="lbl_mu" Content="Mu:" HorizontalAlignment="Left" Margin="114,198,0,0" VerticalAlignment="Top" Width="38"/>
+        <TextBox x:Name="txt_ceil" HorizontalAlignment="Left" Height="23" Margin="55,226,0,0" TextWrapping="Wrap" Text="12" VerticalAlignment="Top" Width="54"/>
+        <Label x:Name="lbl_ceil" Content="Ceil.:" HorizontalAlignment="Left" Margin="10,226,0,0" VerticalAlignment="Top" Width="40"/>
+        <TextBox x:Name="txt_ceilby" HorizontalAlignment="Left" Height="23" Margin="166,226,0,0" TextWrapping="Wrap" Text="12" VerticalAlignment="Top" Width="68"/>
+        <Label x:Name="lbl_ceilby" Content="Ceil. by:" HorizontalAlignment="Left" Margin="114,226,0,0" Width="52" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_seed" HorizontalAlignment="Left" Height="23" Margin="166,287,0,0" TextWrapping="Wrap" Text="12" VerticalAlignment="Top" Width="68"/>
+        <Label x:Name="lbl_seed" Content="Seed:" HorizontalAlignment="Left" Margin="124,285,0,0" Width="42" VerticalAlignment="Top"/>
+        <Button x:Name="btn_back" Content="Back" HorizontalAlignment="Left" Margin="10,285,0,0" VerticalAlignment="Top" Width="109" Height="26" Click="btn_back_Click"/>
+    </Grid>
+</Window>

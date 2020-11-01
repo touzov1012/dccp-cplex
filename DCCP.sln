@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCCP", "DCCP\DCCP.csproj", "{92EED075-42CF-4EE3-85C7-D33224B42C0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCCP_Examples", "DCCP_Examples\DCCP_Examples.csproj", "{079642AC-7C68-4D22-B380-DD6704956B17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92EED075-42CF-4EE3-85C7-D33224B42C0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92EED075-42CF-4EE3-85C7-D33224B42C0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92EED075-42CF-4EE3-85C7-D33224B42C0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92EED075-42CF-4EE3-85C7-D33224B42C0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{079642AC-7C68-4D22-B380-DD6704956B17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{079642AC-7C68-4D22-B380-DD6704956B17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{079642AC-7C68-4D22-B380-DD6704956B17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{079642AC-7C68-4D22-B380-DD6704956B17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
