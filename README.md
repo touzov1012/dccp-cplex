@@ -25,3 +25,6 @@ The problem of finding the shortest path from some point A to point B in finite 
 
 Given a collection of moving drones in finite dimensional real space, we can imagine the task of driving these drones to a set of destinations while minimizing the amount of spent fuel. The task in its current formulation is a simple linear program which can be solved efficiently by CPLEX itself. However, lets take a look at the solution obtained...
 
+<p align="center"><img src="https://user-images.githubusercontent.com/26099083/97809963-7ae04400-1c3e-11eb-9285-f5520dfbea13.PNG"></p>
+
+If each drone moves from the green to the yellow dot, then the red spheres indicate points of collision between drones. To avoid these collisions while still minimizing fuel expenditure, we can add additional DC constraints and apply the DCA above.
