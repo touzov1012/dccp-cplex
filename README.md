@@ -18,3 +18,5 @@ The problem of finding an optimal nesting of arbitrary polygons is well known du
 ### Path planning
 
 The problem of finding the shortest path from some point A to point B in finite dimensional real space while also avoiding spherical obstacles may also be formulated as a DC program. In fact, the same type of non-convex constraints that are required to formulate the sphere packing problem are also used in the formulation of this problem.
+
+<p align="center"><img src="https://user-images.githubusercontent.com/26099083/97809820-6485b880-1c3d-11eb-80e7-50a5bec43c4d.PNG"></p>
