@@ -11,4 +11,10 @@ The sphere packing problem envolves finding a placement of arbitrary sized spher
 
 ### Polygon nesting
 
-The problem of finding an optimal nesting of arbitrary polygons is well known due to its various applications in circuit design, CNC cutting, 3D art design, etc. In 2D this is a natural extension of the sphere packing problem above. While the formulation of the problem is a bit more involved and more efficient solution methods for this problem exist, it fits into the framework of a DC program and so may be solved by DCA for a few shapes.
+The problem of finding an optimal nesting of arbitrary polygons is well known due to its various applications in circuit design, CNC cutting, 3D art design, marketing, etc. In 2D this is a natural extension of the sphere packing problem above. While the formulation of the problem is a bit more involved and more efficient solution methods for this problem exist, it fits into the framework of a DC program and so may be solved by DCA for a few shapes.
+
+<p align="center"><img src="https://user-images.githubusercontent.com/26099083/97809654-250a9c80-1c3c-11eb-9e1f-e4e8952406f6.PNG"></p>
+
+### Path planning
+
+The problem of finding the shortest path from some point A to point B in finite dimensional real space while also avoiding spherical obstacles may also be formulated as a DC program. In fact, the same type of non-convex constraints that are required to formulate the sphere packing problem are also used in the formulation of this problem.
