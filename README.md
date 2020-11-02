@@ -9,6 +9,50 @@ Consider solving the non-convex problem
 
 To apply the optimizer, we need to write each function in the formulation as a difference of convex functions. For example, the objective function...
 
+<p align="center"><img src="https://latex.codecogs.com/gif.latex?-x_1^2&plus;x_2^2&plus;x_3^2=(x_2^2&plus;x_3^2)-(x_1^2)=f-g" /></p>
+
+So, now we can build our model and define our variables as in CPLEX.
+
+```cs
+dc_Model model = new dc_Model();
+dc_Var[] X = model.AddVarArray("X", 0, 2, 3, ExUtility.RandRange);
+```
+
+Set the objective function.
+
+```cs
+model.SetObjective(model.Fn_SumSquares(X[1], X[2]), model.Fn_Square(X[0]));
+```
+
+Set the constraints.
+
+```cs
+model.AddLE(model.Fn_Sum(X), model.Fn_Const(2));
+model.AddLE(model.Fn_Sum(X[0], model.Fn_Const(1)), 
+            model.Fn_Sum(model.Fn_Scale(4, model.Fn_Square(X[1])), model.Fn_Square(X[2])));
+```
+
+Set the number of start attempts, and execute the model.
+
+```cs
+model.Solve(5, ExUtility.RandRange);
+```
+
+The true solution is in fact (1.25, 0.75, 0.00) with an optimal value of -1. The solver recovers this solution seen below.
+
+```
+******************************
+Name: X_0 | Value: 1.2499999991451 | LB: 0 | UB: 2
+Name: X_1 | Value: 0.750000000079298 | LB: 0 | UB: 2
+Name: X_2 | Value: 4.02633910440121E-10 | LB: 0 | UB: 2
+******************************
+Optimal Value: -0.999999996117459
+Is Feasible: True
+******************************
+```
+
+We can also tackle some of the more complicated examples presented in the paper above.
+
 ### Sphere Packing
 
 The sphere packing problem envolves finding a placement of arbitrary sized spheres into the smallest enclosing container without sphere overlap. The difficulty in solving the problem formulation comes from the need to lower bound the distance between points in space. However, this type of constraint is natural in the DC framework and thus the solution methods presented above may be leveraged.
