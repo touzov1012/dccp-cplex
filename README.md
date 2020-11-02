@@ -1,7 +1,13 @@
 # Disciplined Convex-Concave Programming
 A .NET class library for the CPLEX optimizer to support disciplined convex-concave program formulations using the vanilla DC algorithm (DCA) described [here](https://arxiv.org/abs/1604.02639).
 
-Difference of convex (DC) programs are a natural extension of convex conic optimization problems to the realm of non-convex optimization. Included in the solution is a WPF applet demonstrating a few interesting applications of DC programs, a number of which are covered in the above paper. It is well known that the DC algorithm does not give us any guarantees on global optimality of solutions; however, as in the examples, local solutions may be sufficient for specific classes of problems.
+## Usage and Examples
+
+Consider solving the non-convex problem
+
+<p align="center"><img src="https://latex.codecogs.com/gif.latex?\begin{array}{rrcl}&space;\min&space;&&space;-x_1^2&plus;x_2^2&plus;x_3^2&space;\\&space;s.t.&space;&&space;x_1&plus;x_2&plus;x_3&space;&&space;\le&space;&&space;2&space;\\&space;&&space;x_1-4x_2^2-x_3^2&space;&&space;\le&space;&&space;-1&space;\\&space;&&space;x_1,x_2,x_3&space;&&space;\ge&space;&&space;0&space;\end{array}" /></p>
+
+To apply the optimizer, we need to write each function in the formulation as a difference of convex functions. For example, the objective function...
 
 ### Sphere Packing
 
